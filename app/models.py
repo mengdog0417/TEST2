@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
-class Employee(models.Model):
+class Employee(models.Model): #客戶
     number = models.CharField(max_length=20,verbose_name='id', unique=True)
     serial = models.CharField(max_length=50,default=None)
     pwd = models.CharField(max_length=50,default=None)
